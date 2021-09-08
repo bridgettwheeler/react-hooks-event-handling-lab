@@ -1,11 +1,16 @@
 
 function EyesOnMe() {
-    function areYouWatching(event) {
-        //if event is blur log "Hey! Eyes on me!"
-        //if event is focus log "Good!"
+    function handleBlur(event) {
+        console.log("Hey! Eyes on me!")
+
+    }
+
+    function handleFocus(event) {
+        console.log("Good!")
+
     }
     return (
-       <button onClick={}>Eyes in me!</button> 
+       <button onBlur={handleBlur} onFocus={handleFocus}>Eyes on me!</button> 
     );
 }
 export default EyesOnMe;
